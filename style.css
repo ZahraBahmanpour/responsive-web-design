@@ -43,6 +43,7 @@ a {
 
 .navbar .icon {
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
@@ -51,22 +52,20 @@ a {
   }
   .navbar a.icon {
     display: block;
-  }
-  .navbar.responsive ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+  .navbar.responsive ul {
+    flex-direction: column;
+  }
   .navbar.responsive a {
-    float: none;
     display: block;
     text-align: left;
   }
 }
+
+/*------------------------------------------------------*/
 
 .intro {
   background: url(img/hero-bg.png) top center no-repeat;
@@ -81,7 +80,7 @@ a {
 .intro h2 {
   color: #444444;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 2.5vw;
 }
 
 .intro-container {
@@ -91,9 +90,6 @@ a {
 @media screen and (max-width: 800px) {
   .intro img {
     display: none;
-  }
-  .intro h1 {
-    font-size: 32px;
   }
 }
 
@@ -153,10 +149,29 @@ a {
 }
 
 /* Values Section */
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .values-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.values header p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.values header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #012970;
+  text-align: center;
 }
 
 .values-container .box {
