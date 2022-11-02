@@ -115,6 +115,7 @@ a {
   background-color: #f6f9ff;
   padding: 40px;
   width: 50%;
+  box-sizing: border-box;
 }
 
 .about img {
