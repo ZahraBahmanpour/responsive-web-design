@@ -44,7 +44,11 @@
           <h1>We offer modern solutions for growing your business</h1>
           <h2>We are team of talented designers making responsive websites</h2>
         </header>
-        <img src="img/hero-img.png" />
+        <picture>
+          <source media="(max-width: 799px)" srcset="img/hero-img-small.png" />
+          <source media="(min-width: 800px)" srcset="img/hero-img.png" />
+          <img src="img/hero-img.png" alt="Introduction" />
+        </picture>
       </div>
     </section>
     <main>

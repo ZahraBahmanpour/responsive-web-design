@@ -88,9 +88,13 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  .intro img {
-    display: none;
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
   }
+  /* .intro-container img {
+    display: none;
+  } */
 }
 
 /* About Section */
